@@ -26,8 +26,8 @@ const yujiBoku = Yuji_Boku({
 });
 
 export const metadata: Metadata = {
-  title: '空神楽プロジェクト - わたしたちの未来を紡ぐ新たな物語',
-  description: 'ひとりの夜空が、"わたしたち"の未来へ - 光るドローンの群れによる新しい集団的表現創造プロジェクト',
+  title: '空神楽プロジェクト - 新しい集団的表現の創造',
+  description: 'ひとりの夜空が、"わたしたち"の未来へ - 光るドローンの群れによる新しい集団的表現を創造するプロジェクト',
 };
 
 export default function RootLayout({
