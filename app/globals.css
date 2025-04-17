@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    
+    /* Traditional Japanese colors */
+    --deep-red: 0 100% 30%;      /* 深紅 */
+    --indigo: 230 100% 30%;      /* 藍色 */
+    --gold: 45 100% 50%;         /* 金色 */
+    --young-grass: 120 60% 70%;  /* 若草色 */
+    
+    --primary: var(--deep-red);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--indigo);
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: var(--gold);
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: var(--gold);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    /* Adjusted for dark mode */
+    --primary: var(--deep-red);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--indigo);
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: var(--gold);
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: var(--gold);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(
+      circle at center,
+      rgba(var(--deep-red), 0.1) 0%,
+      rgba(var(--indigo), 0.1) 100%
+    );
+  }
+}
+
+.hero-pattern {
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: 
+    linear-gradient(30deg, rgba(var(--deep-red), 0.1) 12%, transparent 12.5%, transparent 87%, rgba(var(--deep-red), 0.1) 87.5%, rgba(var(--deep-red), 0.1)),
+    linear-gradient(150deg, rgba(var(--deep-red), 0.1) 12%, transparent 12.5%, transparent 87%, rgba(var(--deep-red), 0.1) 87.5%, rgba(var(--deep-red), 0.1)),
+    linear-gradient(30deg, rgba(var(--deep-red), 0.1) 12%, transparent 12.5%, transparent 87%, rgba(var(--deep-red), 0.1) 87.5%, rgba(var(--deep-red), 0.1)),
+    linear-gradient(150deg, rgba(var(--deep-red), 0.1) 12%, transparent 12.5%, transparent 87%, rgba(var(--deep-red), 0.1) 87.5%, rgba(var(--deep-red), 0.1)),
+    linear-gradient(60deg, rgba(var(--gold), 0.1) 25%, transparent 25.5%, transparent 75%, rgba(var(--gold), 0.1) 75%, rgba(var(--gold), 0.1)),
+    linear-gradient(60deg, rgba(var(--gold), 0.1) 25%, transparent 25.5%, transparent 75%, rgba(var(--gold), 0.1) 75%, rgba(var(--gold), 0.1));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
