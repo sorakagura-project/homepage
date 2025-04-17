@@ -4,7 +4,13 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { 
-    unoptimized: true 
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
   webpack: (config, { dev }) => {
     if (dev) {

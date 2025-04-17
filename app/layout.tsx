@@ -18,7 +18,6 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 
 const yujiBoku = Yuji_Boku({
-  preload: true,
   weight: '400',
   subsets: ['latin'],
   variable: '--font-yuji-boku',

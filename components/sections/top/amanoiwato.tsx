@@ -13,9 +13,7 @@ export function Amanoiwato() {
           className="max-w-3xl mx-auto"
         >
           <div className="relative p-4 bg-gradient-to-br from-background/90 to-background/70 rounded-lg shadow-xl border border-primary/10">
-            <div className="absolute inset-0 bg-[url('/images/washi.png')] opacity-10 mix-blend-overlay rounded-lg" />
-            
-            <div className="relative space-y-3 font-['Yuji_Boku'] text-lg leading-loose">
+            <div className="relative space-y-3 font-yujiboku text-lg leading-loose">
               <p>
                 むかしむかし、世界にのう、スサノオちゅう、人の気持ちなんぞ露ほども気にかけん、<br></br>大地を削り、海を荒らす、困った神さまがおったそうな。
               </p>
