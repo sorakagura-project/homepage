@@ -63,7 +63,7 @@ export function LearnWays() {
         >
           <h2 className="text-3xl font-bold mb-4">3つの学びの手段</h2>
           <p className="text-lg text-muted-foreground">
-            あなたのスタイルに合わせて選べる学習方法
+            あなたのスタイルに合わせて<br className="block sm:hidden" />選べる学習方法
           </p>
         </motion.div>
 

@@ -11,19 +11,19 @@ export function ToolWorkshops() {
     {
       title: "初心者向けワークショップ",
       description: "空神楽の基礎から学ぶ、1日集中講座。経験豊富な講師が丁寧に指導します。",
-      date: "2024年4月20日(土)",
-      location: "渋谷テックセンター",
-      capacity: "15名",
-      price: "15,000円",
+      date: "未定",
+      location: "-",
+      capacity: "-",
+      price: "-",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800"
     },
     {
       title: "アドバンスドコース",
-      description: "より高度な表現技法を学ぶ、3日間の集中プログラム。作品制作まで行います。",
-      date: "2024年5月3日(金)〜5日(日)",
-      location: "六本木アートセンター",
-      capacity: "10名",
-      price: "45,000円",
+      description: "様々な技術駆使し、より高度な表現技法を学ぶ、1日集中講座。",
+      date: "未定",
+      location: "-",
+      capacity: "-",
+      price: "-",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800"
     }
   ]
@@ -77,11 +77,8 @@ export function ToolWorkshops() {
                     </div>
                   </div>
                   <p className="text-lg font-bold text-primary mb-4">{workshop.price}</p>
-                  <Button asChild className="w-full">
-                    <Link href="/workshops/apply">
-                      申し込む
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
+                  <Button disabled className="w-full">
+                    準備中
                   </Button>
                 </div>
               </Card>

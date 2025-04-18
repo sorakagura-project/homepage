@@ -37,7 +37,7 @@ export function WatchWorkshops() {
     location: "未定",
     capacity: "30名",
     price: "3,000円",
-    image: "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2000"
   }
 
   return (

@@ -111,9 +111,9 @@ export function CreateProjects() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-12"
         >
-          <h1 className="text-4xl font-bold mb-4">進行中のプロジェクト</h1>
+          <h1 className="text-4xl font-bold mb-4">進行中の<br className="block sm:hidden" />プロジェクト</h1>
           <p className="text-lg text-muted-foreground">
-            興味のあるもの、気軽にぜひ参加してください！
+            興味のあるもの、気軽に<br className="block sm:hidden" />ぜひ参加してください！
           </p>
         </motion.div>
 

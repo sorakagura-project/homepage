@@ -12,7 +12,7 @@ export function CollabHero() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-2xl md:text-4xl md:text-5xl font-bold mb-6">
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-gold via-deepRed to-indigo">
               わたしたちの豊かな未来を
             </span>
@@ -20,7 +20,7 @@ export function CollabHero() {
               心技を持ち寄り共創する
             </span>
           </h1>
-          <div className="text-xl text-muted-foreground space-y-6 mt-8">
+          <div className="text-sm md:text-xl text-muted-foreground space-y-6 mt-8">
             <p>
               人、テクノロジー、自然、文化の分断を、
             </p>

@@ -7,22 +7,22 @@ import { Play } from 'lucide-react'
 export function ToolTutorials() {
   const tutorials = [
     {
-      title: "空神楽 Studio 入門",
-      description: "基本的な操作方法から、シンプルな光のアニメーション作成まで",
-      duration: "15:30",
+      title: "Skybrush Studio 入門",
+      description: "ソフトのインストールから、シンプルな光のアニメーション作成まで",
+      duration: "15:00",
       embedId: "watch?v=n9Pd8fXS2j4"
     },
     {
-      title: "群体制御の基礎",
-      description: "複数のドローンを美しく連携させるテクニック",
-      duration: "12:45",
-      embedId: "dQw4w9WgXcQ"
+      title: "-",
+      description: "-",
+      duration: "-",
+      embedId: "-"
     },
     {
-      title: "物語を紡ぐ光の演出",
-      description: "感動を呼ぶストーリーテリングの手法",
-      duration: "18:20",
-      embedId: "dQw4w9WgXcQ"
+      title: "-",
+      description: "-",
+      duration: "-",
+      embedId: "-"
     }
   ]
 
@@ -48,8 +48,9 @@ export function ToolTutorials() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
+              className="h-full"
             >
-              <Card className="overflow-hidden">
+              <Card className="flex flex-col h-full">
                 <div className="aspect-video relative">
                   <iframe
                     src={`https://www.youtube.com/${tutorial.embedId}`}
@@ -59,7 +60,7 @@ export function ToolTutorials() {
                     className="absolute inset-0 w-full h-full"
                   />
                 </div>
-                <div className="p-4">
+                <div className="p-4 flex flex-col flex-grow">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                     <Play className="h-4 w-4" />
                     <span>{tutorial.duration}</span>

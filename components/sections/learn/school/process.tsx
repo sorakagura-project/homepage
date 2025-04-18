@@ -2,9 +2,25 @@
 
 import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Label } from '@/components/ui/label'
 import { Eye, BookOpen, GraduationCap, ArrowRight } from 'lucide-react'
+import { useState } from 'react'
+import { sendContactForm } from '@/lib/send-contact-form'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 
 export function SchoolProcess() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
   const steps = [
     {
       title: "実演鑑賞",
@@ -25,6 +41,39 @@ export function SchoolProcess() {
       color: "from-youngGrass to-indigo"
     }
   ]
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    const formData = new FormData(event.currentTarget)
+    
+    try {
+      await sendContactForm({
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        message: `
+申し込み内容: ${formData.get('inquiry_type')}
+
+お名前: ${formData.get('name')}
+メールアドレス: ${formData.get('email')}
+年齢: ${formData.get('age')}
+
+その他メッセージ:
+${formData.get('message')}
+        `,
+        formType: 'join'
+      })
+      setSubmitStatus('success')
+      event.currentTarget.reset()
+    } catch (error) {
+      console.error('Failed to send form:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
     <section className="py-24 bg-background/50">
@@ -69,24 +118,81 @@ export function SchoolProcess() {
               ))}
             </div>
 
-            {/* Final Message */}
+            {/* Final Message and Contact Form */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="mt-12 text-center"
+              className="mt-12"
             >
-              <Card className="p-8 bg-primary text-primary-foreground">
-                <h3 className="text-xl font-semibold mb-4">
+              <Card className="p-8">
+                <h3 className="text-xl font-semibold mb-4 text-center">
                   少しでも興味が湧いた方へ
                 </h3>
-                <p className="text-lg mb-2">
-                  まずは気軽にご相談ください。
-                </p>
-                <p className="text-muted-foreground">
-                  お子様の興味や適性、ご家族の希望に合わせて、
+                <p className="text-lg mb-8 text-center text-muted-foreground">
+                  お子様の興味や適性、ご家族の希望に合わせて、<br />
                   最適な学習プランをご提案させていただきます。
                 </p>
+
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="inquiry_type">申し込み内容</Label>
+                    <Select name="inquiry_type" required>
+                      <SelectTrigger>
+                        <SelectValue placeholder="申し込み内容を選択してください" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="entry">入塾の申し込み</SelectItem>
+                        <SelectItem value="trial">体験入学</SelectItem>
+                        <SelectItem value="visit">拠点訪問</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="name">お名前</Label>
+                    <Input id="name" name="name" required />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="email">メールアドレス</Label>
+                    <Input id="email" name="email" type="email" required />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="age">年齢</Label>
+                    <Input id="age" name="age" type="number" min="0" max="120" required />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="message">その他メッセージ</Label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      placeholder="ご質問やご要望などございましたらお書きください"
+                      rows={4}
+                    />
+                  </div>
+
+                  <Button 
+                    type="submit" 
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? '送信中...' : '送信する'}
+                  </Button>
+
+                  {submitStatus === 'success' && (
+                    <p className="text-green-600 text-center">
+                      送信が完了しました。確認次第ご連絡いたします。
+                    </p>
+                  )}
+                  {submitStatus === 'error' && (
+                    <p className="text-red-600 text-center">
+                      送信に失敗しました。時間をおいて再度お試しください。
+                    </p>
+                  )}
+                </form>
               </Card>
             </motion.div>
           </div>

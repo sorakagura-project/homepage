@@ -60,7 +60,7 @@ export function TravelResidence() {
         >
           <h2 className="text-3xl font-bold mb-4">滞在プログラム</h2>
           <p className="text-lg text-muted-foreground">
-            穏やかで創造的な活動を支える多様な滞在オプション
+            穏やかで創造的な活動を支える<br className="block sm:hidden" />多様な滞在オプション
           </p>
         </motion.div>
 

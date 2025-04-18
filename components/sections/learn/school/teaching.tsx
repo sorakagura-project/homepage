@@ -41,7 +41,7 @@ export function SchoolTeaching() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <h2 className="text-3xl font-bold mb-6">教える側として参加する</h2>
+          <h2 className="text-3xl font-bold mb-6">教える側として<br className="block sm:hidden" />参加する</h2>
           <p className="text-lg text-muted-foreground">
             学ぶだけでなく、教える側、学び場を作る側もやってみたいという方も募集しています
           </p>
@@ -73,7 +73,7 @@ export function SchoolTeaching() {
                   </ul>
                 </div>
                 <Button className="mt-auto" asChild>
-                  <Link href="/join/teaching">
+                  <Link href="/join">
                     応募する
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

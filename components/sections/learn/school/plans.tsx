@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check } from 'lucide-react'
 
 export function SchoolPlans() {
   const plans = [
@@ -73,9 +73,8 @@ export function SchoolPlans() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full">
-                  詳しく見る
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                <Button disabled className="w-full mt-auto">
+                  準備中
                 </Button>
               </Card>
             </motion.div>

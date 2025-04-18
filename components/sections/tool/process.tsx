@@ -16,7 +16,7 @@ export function ToolProcess() {
       icon: Palette,
       title: "3Dモデリングとアニメーション",
       description: "専用ソフトで光の動きをデザインし、美しい模様や物語を創造します。",
-      image: "/images/skybrush-blender.png"
+      image: "/images/skybrush-blender.jpg"
     },
     {
       icon: Send,
@@ -43,7 +43,7 @@ export function ToolProcess() {
         >
           <h1 className="text-4xl font-bold mb-4">空神楽の作り方</h1>
           <p className="text-lg text-muted-foreground">
-            あなたのアイデアを夜空に描く、4つのステップ
+            あなたのアイデアを夜空に描く、<br className="block sm:hidden" />4つのステップ
           </p>
         </motion.div>
 

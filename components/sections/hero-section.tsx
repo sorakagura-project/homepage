@@ -149,11 +149,11 @@ export function HeroSection() {
             ひとりの夜空が、
           </span>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-gold via-deepRed to-indigo mt-2">
-            "わたしたち"の未来へ
+            "わたしたち"の<br className="block sm:hidden" />未来へ
           </span>
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-          光るドローンの群れが紡ぐ、わたしたちの未来の物語
+          光るドローンの群れが紡ぐ、<br className="block sm:hidden" />わたしたちの未来の物語
         </p>
         <Button asChild size="lg" className="animate-float shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/50 transition-shadow">
           <Link href="/about">

@@ -13,7 +13,7 @@ export function JoinWays() {
       icon: Users,
       action: {
         text: "チャットに参加",
-        href: "https://line.me/ti/g2/XXXXXXXX",
+        href: "https://instagram.com/sorakagura_project",
         external: true
       },
       image: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=800"
@@ -65,7 +65,7 @@ export function JoinWays() {
           >
             <h2 className="text-3xl font-bold mb-4">応募/相談方法</h2>
             <p className="text-lg text-muted-foreground">
-              自分に合った方法から、貢献してみたい興味や役割などご提案/相談ください。
+              自分に合った方法から、<br className="block sm:hidden" />貢献してみたい興味や役割など<br className="block sm:hidden" />ご提案/相談ください。
             </p>
           </motion.div>
 

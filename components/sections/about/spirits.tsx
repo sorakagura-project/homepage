@@ -22,28 +22,29 @@ export function AboutSpirits() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1 relative aspect-[3/4] w-full">
+            <div className="order-1 md:order-1 relative aspect-[4/3] md:aspect-[3/4] w-full">
               <img
                 src="/images/gathering-dots.jpg"
                 alt="八百万の神々"
                 className="rounded-lg object-cover w-full h-full shadow-xl"
               />
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-2 md:order-2">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-yujiboku">
+                むかしの人びとは言った。世界には、数えきれないほどの神が宿っていると。  
+それぞれが完全ではなくとも、互いに補い合い、違いを認め合いながら、この世界の調和と豊かさを担っていると。
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                むかしの人びとは言いました。世界には、数えきれないほどの神が宿っていると。  
-それぞれが完全ではなくとも、互いに補い合い、違いを認め合いながら、この世界の調和と豊かさを担っている、と。
-
                 
                 空神楽は、今を美しく生きたいと思うすべての人に開かれた集いの場です。  
-参加者の誰もが、光を放つ存在であり、
+<br className="block sm:hidden" />参加者の誰もが、光を放つ存在であり、
 この舞の構成者であり、創造者です。
 
-あなたが持つ光—それが知識であれ、想いであれ、迷いであれ—
+<br className="block sm:hidden" />あなたが持つ光—それが知識であれ、想いであれ、迷いであれ—
 すべてがこの空にとって、大切なひとしずくです。
 
-作る人、踊る人、学ぶ人、見守る人、語る人、感じる人。
-どんな形であれ、まだ見ぬ、世界に隠れた光の参加を、心待ちにしています。
+<br className="block sm:hidden" />作る人、踊る人、学ぶ人、見守る人、語る人、感じる人。
+どんな形であれまだ見ぬ、世界に隠れた光の参加を、心待ちにしています。
                 
               </p>
             </div>

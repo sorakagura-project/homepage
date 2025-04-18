@@ -22,8 +22,8 @@ export function AboutDespair() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <div className="order-2 md:order-1">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-yujiboku">
                 かつて光のありかが失われた時、世界は闇に覆われた。
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
@@ -44,12 +44,14 @@ export function AboutDespair() {
                 制御できずに暴走を続ける経済、テクノロジー、社会に、本当に希望はないのでしょうか？
               </p>
             </div>
-            <div className="relative aspect-[3/4] w-full">
-              <img
-                src="/images/dark.jpg"
-                alt="光を失った世界"
-                className="rounded-lg object-cover w-full h-full shadow-xl"
-              />
+            <div className="order-1 md:order-2">
+              <div className="relative aspect-[4/3] md:aspect-[3/4] w-full">
+                <img
+                  src="/images/dark.jpg"
+                  alt="光を失った世界"
+                  className="rounded-lg object-cover w-full h-full shadow-xl"
+                />
+              </div>
             </div>
           </div>
         </motion.div>

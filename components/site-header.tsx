@@ -80,8 +80,8 @@ export function SiteHeader() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="inline-block font-bold text-xl">空神楽</span>
+          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+            <span className="inline-block font-bold text-lg sm:text-xl whitespace-nowrap">空神楽</span>
           </Link>
         </motion.div>
         <div className="flex flex-1 items-center justify-end space-x-6">
@@ -131,7 +131,7 @@ export function SiteHeader() {
           </nav>
           <div className="flex items-center space-x-3 border-l pl-6">
             <a
-              href="https://www.instagram.com/noa_gallery_fes/"
+              href="https://instagram.com/sorakagura_project"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

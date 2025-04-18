@@ -26,7 +26,7 @@ export function SchoolHero() {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-            未来の私とわたしたちを紡ぐ、美と探求の学びの場
+            未来の私とわたしたちを紡ぐ、<br className="block sm:hidden" />美と探求の学びの場
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             年齢や分野を超えて、人々が集い、学び、創造する。

@@ -67,7 +67,7 @@ export function SchoolFields() {
         >
           <h2 className="text-3xl font-bold mb-6">4つの探求分野</h2>
           <p className="text-lg text-muted-foreground">
-            科学・芸術・技術・人文、4つの視点から世界を探求
+            科学・芸術・技術・生き方、<br className="block sm:hidden" />4つの視点から世界を探求
           </p>
         </motion.div>
 

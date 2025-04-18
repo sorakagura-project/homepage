@@ -33,7 +33,7 @@ export function ProjectVideos() {
         >
           <h2 className="text-3xl font-bold mb-4">映像で見る空神楽</h2>
           <p className="text-lg text-muted-foreground">
-            光と笑顔と豊かな創造に満ちた、わたしたちの新たな日常
+            光と笑顔と豊かな創造に満ちた、<br className="block sm:hidden" />わたしたちの新たな日常
           </p>
         </motion.div>
 

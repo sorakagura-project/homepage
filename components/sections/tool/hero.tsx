@@ -18,7 +18,7 @@ export function ToolHero() {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground">
-            自然、文化との調和を目指す新しいテクノロジーのあり方
+            自然、文化との調和を目指す<br className="block sm:hidden" />新しいテクノロジーのあり方
           </p>
         </motion.div>
       </div>
