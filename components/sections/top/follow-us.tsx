@@ -13,7 +13,7 @@ export function FollowUs() {
       links: [
         {
           name: "Instagram",
-          url: "https://www.instagram.com/noa_gallery_fes/",
+          url: "https://instagram.com/sorakagura_project",
           icon: Instagram,
           style: "bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white hover:opacity-90"
         },
@@ -62,7 +62,7 @@ export function FollowUs() {
         >
           <h2 className="text-3xl font-bold mb-4">SNSをフォロー</h2>
           <p className="text-lg text-muted-foreground">
-            あなたに合った方法でプロジェクトに参加
+            あなたに合った方法で<br className="block sm:hidden" />プロジェクトに参加
           </p>
         </motion.div>
 

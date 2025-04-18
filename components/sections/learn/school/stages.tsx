@@ -67,7 +67,7 @@ export function SchoolStages() {
         >
           <h2 className="text-3xl font-bold mb-6">4つの学びのステージ</h2>
           <p className="text-lg text-muted-foreground">
-            目的に合わせて選べる、段階的な学習プロセス
+            目的に合わせて選べる、<br className="block sm:hidden" />段階的な学習プロセス
           </p>
         </motion.div>
 

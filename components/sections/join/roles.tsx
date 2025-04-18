@@ -67,8 +67,8 @@ export function JoinRoles() {
         >
           <h2 className="text-3xl font-bold mb-4">募集している役割</h2>
           <p className="text-lg text-muted-foreground">
-            プロジェクトの運営母体を構成するメンバーとして、
-            未来の文化の創造に共に取り組みます
+            プロジェクトの運営母体を<br className="block sm:hidden" />構成するメンバーとして、
+            <br className="block sm:hidden" />未来の文化の創造に共に取り組みます
           </p>
         </motion.div>
 
@@ -86,7 +86,7 @@ export function JoinRoles() {
                 <p className="text-muted-foreground mb-4">{role.description}</p>
                 <div className="space-y-4">
                   <div>
-                    <p className="text-sm font-semibold">求めるスキル:</p>
+                    <p className="text-sm font-semibold">使うスキル:</p>
                     <ul className="text-sm text-muted-foreground">
                       {role.skills.map((skill, i) => (
                         <li key={i} className="flex items-center gap-2">

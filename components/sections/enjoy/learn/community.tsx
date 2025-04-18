@@ -33,7 +33,7 @@ export function LearnCommunity() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">オンラインコミュニティ</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">オンラインコミュニティ</h2>
           <p className="text-lg text-muted-foreground">
             Discordで繋がる、学びと交流の場
           </p>
@@ -70,7 +70,7 @@ export function LearnCommunity() {
             </p>
             <Button variant="secondary" size="lg" asChild>
               <a
-                href="https://discord.gg/your-invite-link"
+                href="https://discord.gg/Q9yg7Pszxs"
                 target="_blank"
                 rel="noopener noreferrer"
               >

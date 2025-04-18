@@ -9,16 +9,16 @@ import Link from 'next/link'
 export function ToolProjects() {
   const projects = [
     {
-      title: "アニメーションソフト開発プロジェクト",
-      description: "より直感的で創造的な表現を可能にする、次世代の空神楽制作ソフトウェアの開発に参加しませんか？",
+      title: "アニメーションソフト開発PJ",
+      description: "群れの表現とその制作手法を追求し、より直感的で創造的な表現を可能にする、次世代の空神楽制作ソフトウェアを開発します。",
       image: "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800",
-      link: "/projects/animation-software"
+      link: "/projects/orchestration"
     },
     {
-      title: "地域の物語作成プロジェクト",
-      description: "各地域の歴史や文化を、光のアートで表現する新しいプロジェクト。地域の方々と協力して物語を紡ぎます。",
-      image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=800",
-      link: "/projects/local-stories"
+      title: "インクルーシブPJ",
+      description: "空神楽が年齢、障害、人種など様々なハードルを超えて皆が楽しめるものにするために、インターフェースや参加/対話のあり方を設計します。",
+      image: "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      link: "/projects/inclusive"
     }
   ]
 
@@ -45,7 +45,7 @@ export function ToolProjects() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="overflow-hidden">
+              <Card className="flex flex-col h-full">
                 <div className="relative aspect-video">
                   <img
                     src={project.image}
@@ -56,7 +56,7 @@ export function ToolProjects() {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-muted-foreground mb-6">{project.description}</p>
-                  <Button asChild>
+                  <Button asChild className="mt-auto">
                     <Link href={project.link}>
                       詳しく見る
                       <ArrowRight className="ml-2 h-4 w-4" />

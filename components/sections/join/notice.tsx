@@ -19,7 +19,7 @@ export function JoinNotice() {
               <Info className="h-6 w-6 text-muted-foreground flex-shrink-0 mt-1" />
               <div className="space-y-4">
                 <h2 className="text-xl font-semibold">
-                  プロジェクトの段階と関わり方について
+                  プロジェクトの段階と<br className="block sm:hidden" />関わり方について
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p>

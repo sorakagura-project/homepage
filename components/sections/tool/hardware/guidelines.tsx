@@ -7,7 +7,7 @@ export function HardwareGuidelines() {
     <section className="py-24 bg-background">
       <div className="container">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center">空神楽プロジェクトのハードウェアの展開指針</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center">空神楽プロジェクトのハードウェアの<br className="block sm:hidden" />展開指針</h2>
 
           <Card className="p-8 bg-gradient-to-br from-background/90 to-background/70 mb-12">
             <div className="text-center">

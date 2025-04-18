@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div>
             <h3 className="text-lg font-semibold mb-4">空神楽プロジェクト</h3>
             <p className="text-sm text-muted-foreground">
-              光るドローンの群れと紡ぐ、わたしたちの未来創造プロジェクト
+              光るドローンの群れと紡ぐ、<br className="block sm:hidden" />わたしたちの未来創造プロジェクト
             </p>
           </div>
           <div>
@@ -43,7 +43,7 @@ export function SiteFooter() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">自分の興味に合うページ</h3>
+            <h3 className="text-lg font-semibold mb-4">自分の関心に沿うページガイド</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/interests/technology" className="text-sm hover:text-primary">
@@ -76,7 +76,7 @@ export function SiteFooter() {
             <h3 className="text-lg font-semibold mb-4">SNS</h3>
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://www.instagram.com/noa_gallery_fes/"
+                href="https://instagram.com/sorakagura_project"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"

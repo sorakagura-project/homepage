@@ -25,16 +25,16 @@ export function ProjectOverview() {
           className="max-w-3xl mx-auto text-center"
           {...fadeIn}
         >
-          <h2 className="text-3xl font-bold mb-8">空神楽プロジェクトとは</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8">空神楽プロジェクトとは</h2>
           <p className="text-lg leading-relaxed mb-6">
-            空神楽とは、人とドローンが集い、夜空に光の物語を描く、<br />美しさと楽しさに満ちた人機共創の演舞です。
+            空神楽とは、人とドローンが集い、<br className="block sm:hidden" />夜空に光の物語を描く、<br />美しさと楽しさに満ちた<br className="block sm:hidden" />人機共創の演舞です。
           </p>
           <p className="text-lg leading-relaxed mb-6">
-            このプロジェクトは、年齢、能力、肩書き、一切関係なく、<br />空神楽の鑑賞/実演/制作を一緒に楽しむ、全ての人の好奇心に開かれた<br />非営利かつオープンなプロジェクトです。
+            このプロジェクトは、<br className="block sm:hidden" />年齢、能力、肩書き、一切関係なく、<br />空神楽の鑑賞/実演/制作を一緒に<br className="block sm:hidden" />楽しむ、全ての人の好奇心に<br className="block sm:hidden" />開かれた<br className="hidden md:block" />非営利かつオープンな<br className="block sm:hidden" />プロジェクトです。
           </p>
           <p className="text-lg leading-relaxed mb-6">
-            AI、経済、地球環境のめまぐるしい変化の中で、<br />仕事の不安、お金の不安、命の不安に襲われる中でも、
-            <br />今を生きるわたしたちの、生・創造の美が集い重なり合い、<br />
+            AI、経済、地球環境の<br className="block sm:hidden" />めまぐるしい変化の中で、<br />仕事/お金の不安、暇、無力さと虚無感<br className="block sm:hidden" />に襲われる中でも、
+            <br />今を生きるわたしたちの、<br className="block sm:hidden" />生・創造の美が集い重なり合い、<br />
             人・テクノロジー・自然の美しい未来を創造する場となることを目指します。
           </p>
         </motion.div>

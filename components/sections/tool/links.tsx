@@ -12,7 +12,7 @@ export function ToolLinks() {
       title: "ソフトウェア",
       description: "空神楽の制作に必要なソフトウェアツールと、その使い方を紹介します。3Dアニメーション制作から群制御まで、必要な技術を学べます。",
       icon: Code,
-      image: "/images/skybrush-blender.png",
+      image: "/images/skybrush-blender.jpg",
       href: "/tool/software"
     },
     {

@@ -22,7 +22,7 @@ export function ArtHero() {
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-gold via-deepRed to-indigo">
-              芸術表現としての空神楽(準備中)
+              芸術表現としての空神楽（準備中）
             </span>
           </h1>
           <p className="text-xl text-muted-foreground">

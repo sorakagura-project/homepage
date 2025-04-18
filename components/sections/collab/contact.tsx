@@ -79,9 +79,12 @@ ${formData.get('message')}
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="company">企業</SelectItem>
-                    <SelectItem value="government">地方自治体</SelectItem>
+                    <SelectItem value="government">地方自治体/地域活性関係者</SelectItem>
                     <SelectItem value="temple">寺社仏閣</SelectItem>
                     <SelectItem value="npo">社会活動団体</SelectItem>
+                    <SelectItem value="npo">自然関係業界の方</SelectItem>
+                    <SelectItem value="npo">アーティスト/アート団体</SelectItem>
+                    <SelectItem value="npo">教育関係</SelectItem>
                     <SelectItem value="other">その他</SelectItem>
                   </SelectContent>
                 </Select>

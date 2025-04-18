@@ -16,7 +16,7 @@ export function ToolSoftware() {
         "物理シミュレーション"
       ],
       downloadUrl: "https://www.blender.org/download/",
-      image: "https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800"
+      image: "/images/blender.jpg"
     },
     {
       name: "空神楽デザインソフト/Skybrush",
@@ -28,7 +28,7 @@ export function ToolSoftware() {
         "危険回避機能"
       ],
       downloadUrl: "https://skybrush.io/modules/studio/",
-      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=800"
+      image: "/images/skybrush-blender.jpg"
     }
   ]
 
@@ -47,7 +47,7 @@ export function ToolSoftware() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {software.map((item, index) => (
             <motion.div
               key={item.name}
@@ -55,18 +55,18 @@ export function ToolSoftware() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="overflow-hidden h-full flex flex-col">
-                <div className="relative aspect-video">
+              <Card className="h-full flex flex-col">
+                <div className="relative w-full pt-[56.25%]"> {/* 16:9 aspect ratio */}
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="object-cover w-full h-full"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-semibold mb-2">{item.name}</h3>
                   <p className="text-muted-foreground mb-4">{item.description}</p>
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-6 flex-grow">
                     {item.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -75,7 +75,7 @@ export function ToolSoftware() {
                     ))}
                   </ul>
                   <Button asChild className="mt-auto">
-                    <a href={item.downloadUrl}>
+                    <a href={item.downloadUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
                       <Download className="mr-2 h-4 w-4" />
                       ダウンロード
                     </a>

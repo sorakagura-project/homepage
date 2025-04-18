@@ -49,7 +49,7 @@ export function WatchParticipation() {
         >
           <h2 className="text-3xl font-bold mb-4">参加方法</h2>
           <p className="text-lg text-muted-foreground">
-            あなたに合った関わり方を見つけてください
+            あなたに合った関わり方を<br className="block sm:hidden" />見つけてください
           </p>
         </motion.div>
 

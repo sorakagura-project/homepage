@@ -11,7 +11,7 @@ export function HardwareProjects() {
     {
       title: "空神楽スペクタクル化PJ",
       description: "より多くのドローンを集めることにより、より大規模で感動的な演出を目指します。私たちの生活に想像上の生き物、伝説の生き物を現してみませんか？",
-      image: "/images/spectacle-creature.jpeg",
+      image: "/images/spectacle-creature.jpg",
       href: "/projects/spectacle"
     },
     {
@@ -23,7 +23,7 @@ export function HardwareProjects() {
     {
       title: "ドローンは神楽を舞えるかPJ",
       description: "踊るのではなく舞えるかどうかが重要と言われる伝統芸能「神楽」。テクノロジーの発展によりその自律性を高めるドローンは舞えるのか。群知能、群制御技術や、人と群ロボットのインタラクションシステムを文化的知見と共に探求します。",
-      image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800",
+      image: "/images/iwamikagura.webp",
       href: "/projects/orchestration"
     }
   ]
