@@ -4,7 +4,7 @@ import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
 import { CreateHero } from '@/components/sections/enjoy/create/hero'
 import { CreateProjects } from '@/components/sections/enjoy/create/projects'
-import { CreateProposal } from '@/components/sections/enjoy/create/proposal'
+import { ProjectProposal } from '@/components/sections/enjoy/create/proposal'
 
 export default function CreatePage() {
   return (
@@ -14,7 +14,7 @@ export default function CreatePage() {
       <main className="flex-1">
         <CreateHero />
         <CreateProjects />
-        <CreateProposal />
+        <ProjectProposal />
       </main>
 
       <SiteFooter />
