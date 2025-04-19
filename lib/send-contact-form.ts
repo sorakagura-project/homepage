@@ -4,7 +4,7 @@ export async function sendContactForm(formData: {
   message: string
   formType: 'general' | 'join' | 'collab'
 }) {
-  const apiUrl = ${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/contact`
+  const apiUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/contact`
 
   const response = await fetch(apiUrl, {
     method: 'POST',
