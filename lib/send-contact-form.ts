@@ -2,7 +2,7 @@ export async function sendContactForm(formData: {
   name: string
   email: string
   message: string
-  formType: 'general' | 'join' | 'collab'
+  formType: 'general' | 'join' | 'collab' | 'school'
 }) {
   const apiUrl = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/contact`
 
