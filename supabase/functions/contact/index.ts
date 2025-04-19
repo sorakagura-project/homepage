@@ -1,4 +1,4 @@
-import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
+import { serve } from "npm:@std/http-server@0.168.0"
 import { createClient } from "npm:@supabase/supabase-js@2.39.7"
 
 const corsHeaders = {
@@ -10,7 +10,7 @@ interface ContactFormData {
   name: string
   email: string
   message: string
-  formType: 'general' | 'join' | 'collab'
+  formType: 'general' | 'join' | 'collab' | 'school'
 }
 
 serve(async (req) => {
@@ -54,7 +54,7 @@ serve(async (req) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'noreply@sorakagura.com', // Resendで認証したドメインのアドレス
+        from: 'noreply@onresend.com', // Resendで認証したドメインのアドレス
         to: 'sorakagura.project@gmail.com', // 受け取りたいアドレス
         subject: `新しい問い合わせ: ${formData.formType}`,
         html: `

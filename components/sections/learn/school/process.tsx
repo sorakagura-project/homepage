@@ -47,6 +47,8 @@ export function SchoolProcess() {
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
+    const formElement = event.currentTarget
+    
     const formData = new FormData(event.currentTarget)
     
     try {
@@ -63,10 +65,10 @@ export function SchoolProcess() {
 その他メッセージ:
 ${formData.get('message')}
         `,
-        formType: 'join'
+        formType: 'school'
       })
       setSubmitStatus('success')
-      event.currentTarget.reset()
+      formElement.reset()
     } catch (error) {
       console.error('Failed to send form:', error)
       setSubmitStatus('error')

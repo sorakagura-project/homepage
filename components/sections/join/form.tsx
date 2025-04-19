@@ -25,6 +25,8 @@ export function JoinForm() {
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
+    const formElement = event.currentTarget
+      
     const formData = new FormData(event.currentTarget)
     
     try {
@@ -39,7 +41,7 @@ export function JoinForm() {
         formType: 'join'
       })
       setSubmitStatus('success')
-      event.currentTarget.reset()
+      formElement.reset()
     } catch (error) {
       console.error('Failed to send form:', error)
       setSubmitStatus('error')

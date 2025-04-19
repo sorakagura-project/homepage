@@ -75,34 +75,54 @@ export function AnimationGallery() {
     await loadSlim(engine)
   }, [])
 
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setIsSubmitting(true)
 
+    const formElement = event.currentTarget
+    const formData = new FormData(formElement)
+
     try {
-      const formData = new FormData(event.currentTarget)
       const file = formData.get('animation-data') as File
-      
-      // ファイルの検証
+      const title = (formData.get('title') as string).trim()
+      const description = (formData.get('description') as string).trim()
+
       if (!file.name.endsWith('.csv')) {
         throw new Error('CSVファイルのみアップロード可能です')
       }
 
-      // ファイルの内容を検証
+      // ✅ ファイル内容の検証
       const text = await file.text()
-      const rows = text.split('\n')
+      const rows = text.split('\n').filter(row => row.trim() !== '')
       const data = rows.map(row => row.split(',').map(Number))
-      const isValid = data.every(row => row.length === 2 && !row.some(isNaN))
-      
+      const isValid = data.every(row => row.length === 7 && !row.some(isNaN))
+
       if (!isValid) {
-        throw new Error('無効なデータ形式です。各行は2つの数値（x,y座標）である必要があります')
+        throw new Error('無効なデータ形式です。各行は7つの数値（時刻, x, y, z座標, r, g, b値）である必要があります')
       }
 
-      // TODO: 実際のアップロード処理をここに実装
-      // 成功したら以下のようなメッセージを表示
-      alert('アニメーションデータが正常にアップロードされました')
+      // ✅ メール送信（ファイル内容含めて）
+      const response = await fetch('${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/upload-notify', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify({
+          title,
+          description,
+          fileContent: text,  // ファイル内容そのものも一緒に送る
+        }),
+      })
+
+    if (!response.ok) {
+      throw new Error('メール送信に失敗しました')
+    }
+
+      alert('アニメーションデータが正常に提出されました！')
       setShowSubmissionForm(false)
-      
+
     } catch (error) {
       alert(error instanceof Error ? error.message : '提出中にエラーが発生しました')
     } finally {
@@ -220,7 +240,7 @@ export function AnimationGallery() {
                 className="gap-2"
               >
                 <PlusCircle className="h-4 w-4" />
-                アニメーションを投稿
+                模様/物語を投稿
               </Button>
             </motion.div>
           ) : (
@@ -251,7 +271,7 @@ export function AnimationGallery() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="animation-data">アニメーションデータ（CSV）</Label>
+                    <Label htmlFor="animation-data">模様/物語データ（CSV）</Label>
                     <Input
                       id="animation-data"
                       name="animation-data"
@@ -261,7 +281,7 @@ export function AnimationGallery() {
                       className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-primary-foreground hover:file:bg-primary/90"
                     />
                     <p className="text-sm text-muted-foreground mt-2">
-                      CSVファイル形式: 各行に「x座標,y座標」の形式でデータを記述してください
+                      CSVファイル形式: 各行に「時刻,x座標,y座標,z座標,r値,g値,b値」の形式でデータを記述してください。（詳細はSkybrushStudioのマニュアルをご覧ください）
                     </p>
                   </div>
 
