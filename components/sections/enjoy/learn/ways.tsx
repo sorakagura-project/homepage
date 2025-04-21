@@ -19,7 +19,7 @@ export function LearnWays() {
       ],
       icon: Presentation,
       color: "from-deepRed to-gold",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800",
+      image: "/images/workshop-spectacle.jpeg",
       href: "/enjoy/learn#workshop"
     },
     {
@@ -33,7 +33,7 @@ export function LearnWays() {
       ],
       icon: School,
       color: "from-gold to-youngGrass",
-      image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800",
+      image: "/images/kagurajuku.jpeg",
       href: "/enjoy/learn#school"
     },
     {
@@ -47,7 +47,7 @@ export function LearnWays() {
       ],
       icon: Users,
       color: "from-youngGrass to-indigo",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800",
+      image: "/images/online-community.jpeg",
       href: "/enjoy/learn#community"
     }
   ]
@@ -76,7 +76,7 @@ export function LearnWays() {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="overflow-hidden h-full flex flex-col">
-                <div className="relative aspect-video">
+                <div className="relative aspect-video overflow-hidden">
                   <img
                     src={way.image}
                     alt={way.title}

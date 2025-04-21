@@ -8,13 +8,13 @@ export function SchoolEnvironment() {
     {
       title: "南相馬市小高拠点",
       description: "馬とロボットと宇宙が交わる創造の場",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800",
+      image: "/images/odaka-juku.jpeg",
       status: "準備中"
     },
     {
       title: "秩父郡横瀬拠点",
       description: "自然と温かさと情熱が集う創造拠点",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      image: "/images/yokoze-juku.jpeg",
       status: "準備中"
     }
   ]

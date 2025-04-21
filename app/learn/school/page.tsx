@@ -13,6 +13,7 @@ import { SchoolPlans } from '@/components/sections/learn/school/plans'
 import { SchoolProcess } from '@/components/sections/learn/school/process'
 import { SchoolTeaching } from '@/components/sections/learn/school/teaching'
 import { SchoolInclusive } from '@/components/sections/learn/school/inclusive'
+import { GlobalChallenge } from '@/components/sections/enjoy/travel/global-challenge'
 
 export default function SchoolPage() {
   return (
@@ -27,6 +28,7 @@ export default function SchoolPage() {
         <SchoolFields />
         <SchoolStages />
         <SchoolPrograms />
+        <GlobalChallenge />
         <SchoolPlans />
         <SchoolProcess />
         <SchoolTeaching />
