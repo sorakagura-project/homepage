@@ -51,19 +51,19 @@ export function GlobalChallenge() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="overflow-hidden h-full flex flex-col">
-                <div className="aspect-video relative">
+              <Card className="flex flex-col h-full overflow-hidden">
+  　　　　　　　  <div className="aspect-video relative shrink-0">
                   <img
                     src={challenge.image}
                     alt={challenge.title}
-                    className="object-cover w-full h-full"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                   <challenge.icon className="absolute bottom-4 right-4 h-8 w-8 text-white drop-shadow-lg" />
                 </div>
-                <div className="p-6 flex-1">
+                <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-semibold mb-2">{challenge.title}</h3>
-                  <p className="text-muted-foreground">{challenge.description}</p>
+                  <p className="text-muted-foreground flex-1">{challenge.description}</p>
                 </div>
               </Card>
             </motion.div>
