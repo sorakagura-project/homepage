@@ -23,7 +23,7 @@ export function WatchParticipation() {
       buttonText: "サポーター登録"
     },
     {
-      title: "一緒にハレの日を彩る",
+      title: "一緒に創ってハレの日を彩る",
       description: "物語の制作、出店の出店、パフォーマンス、空間演出など。空神楽に集う自分たちの好奇心で、楽しさに満ちた非日常を作り出します。",
       icon: Pencil,
       href: "/join/create",

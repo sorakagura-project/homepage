@@ -12,19 +12,19 @@ export function GlobalChallenge() {
       title: "国際大会への挑戦",
       description: "International Drone Show Competitionなどの、世界規模のイベントに参加し、空神楽の表現を世界に発信します。",
       icon: Trophy,
-      image: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?q=80&w=800"
+      image: "/images/droneshowcompe.jpg"
     },
     {
       title: "国際交流プログラム",
-      description: "欧州のメディアアート機関やアジアのドローンアートプロジェクトとの技術・文化交流を通じて、新しい表現の可能性を探求します。",
+      description: "欧州のメディアアート機関やアジアのアートプロジェクトとの技術・文化交流を通じて、新しい表現の可能性や多様な価値のあり方を吸収します。",
       icon: Users,
-      image: "https://images.unsplash.com/photo-1513366884929-f0b3bedfb653?q=80&w=800"
+      image: "/images/arselectronica.webp"
     },
     {
       title: "海外レジデンス",
-      description: "ベルリンやシリコンバレーなど、世界各地での長期滞在制作プログラムに参加。現地のアーティストや技術者との共同制作を通じて視野を広げます。",
+      description: "ベルリンやシリコンバレーなど、世界各地の制作拠点で探求/制作活動に取り組みます。現地のアーティストや技術者との共同制作を通じて視野を広げます。",
       icon: Globe,
-      image: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?q=80&w=800"
+      image: "/images/global-exchange.webp"
     }
   ]
 
