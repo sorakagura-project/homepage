@@ -11,19 +11,19 @@ export function ParticipationLinks() {
       title: "実演支援",
       description: "ドローンショーの運営をサポート",
       icon: Paintbrush,
-      href: "/join/performance"
+      href: "/enjoy/watch#participation"
     },
     {
       title: "技術開発",
       description: "新しい表現技術の開発に参加",
       icon: Wrench,
-      href: "/join/development"
+      href: "/enjoy/create"
     },
     {
       title: "運営サポート",
       description: "プロジェクトの運営をサポート",
       icon: Users,
-      href: "/join/support"
+      href: "/join"
     }
   ]
 

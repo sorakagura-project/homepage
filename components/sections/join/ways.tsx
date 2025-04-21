@@ -13,7 +13,7 @@ export function JoinWays() {
       icon: Users,
       action: {
         text: "チャットに参加",
-        href: "https://instagram.com/sorakagura_project",
+        href: "/#SNS",
         external: true
       },
       image: "https://images.unsplash.com/photo-1611746872915-64382b5c76da?q=80&w=800"
@@ -35,7 +35,7 @@ export function JoinWays() {
       icon: Calendar,
       action: {
         text: "イベントを見る",
-        href: "/events",
+        href: "/enjoy/watch",
         external: false
       },
       image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800"

@@ -39,7 +39,7 @@ export function WatchParticipation() {
   ]
 
   return (
-    <section className="py-20 bg-background/50">
+    <section id="participation" className="py-20 bg-background/50">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
