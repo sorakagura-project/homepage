@@ -24,7 +24,7 @@ export function AboutSorakagura() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <p className="text-lg text-muted-foreground leading-relaxed mb-6 font-yujiboku">
-                かつて、ある神が舞い、皆が笑い、技を尽くして、光は世界に戻された。
+                ある神が舞い、皆が笑い、技を尽くして、光は世界に戻された。
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 
