@@ -9,7 +9,7 @@ export function SiteFooter() {
           <div>
             <h3 className="text-lg font-semibold mb-4">空神楽プロジェクト</h3>
             <p className="text-sm text-muted-foreground">
-              光るドローンの群れと紡ぐ、<br className="block sm:hidden" />わたしたちの未来創造プロジェクト
+              光るドローンの群れと紡ぐ、<br/>わたしたちの未来創造プロジェクト
             </p>
           </div>
           <div>
@@ -94,7 +94,7 @@ export function SiteFooter() {
             </div>
             <p className="text-sm text-muted-foreground">
               お問い合わせは
-              <Link href="/collab" className="text-primary hover:underline ml-1">
+              <Link href="/collab#contact" className="text-primary hover:underline ml-1">
                 こちら
               </Link>
               からお願いします。

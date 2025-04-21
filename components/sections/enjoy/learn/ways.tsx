@@ -20,7 +20,7 @@ export function LearnWays() {
       icon: Presentation,
       color: "from-deepRed to-gold",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800",
-      href: "/enjoy/learn/workshops"
+      href: "/enjoy/learn#workshop"
     },
     {
       title: "神楽塾",
@@ -34,7 +34,7 @@ export function LearnWays() {
       icon: School,
       color: "from-gold to-youngGrass",
       image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800",
-      href: "/enjoy/learn/school"
+      href: "/enjoy/learn#school"
     },
     {
       title: "オンラインコミュニティ",
@@ -48,7 +48,7 @@ export function LearnWays() {
       icon: Users,
       color: "from-youngGrass to-indigo",
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800",
-      href: "/enjoy/learn/community"
+      href: "/enjoy/learn#community"
     }
   ]
 
