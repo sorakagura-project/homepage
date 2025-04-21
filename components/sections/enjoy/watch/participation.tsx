@@ -12,28 +12,28 @@ export function WatchParticipation() {
       title: "鑑賞して、感じる",
       description: "夜空に広がる光の物語を、ゆっくりとお楽しみください。色々なものとの繋がりと自分の感情を感じながら、新しい体験の記憶を作りましょう。各イベントでは撮影コンテストも行い、制作チームからの表彰も行います。",
       icon: Eye,
-      href: "/tickets",
+      href: "/#SNS",
       buttonText: "SNSをフォロー"
     },
     {
       title: "手伝って大迫力（人数限定）",
       description: "空神楽の実演準備はドローンの運搬配置などで人手が必要です。協力して祭りの準備をし、物語のはじまる前の時間を楽しく過ごしましょう。そして実演時、希望する人は空神楽が舞う迫力をより近くで体験して頂けます。何十、何百のドローンが一斉に舞う迫力を体で味わえます。",
       icon: Users2,
-      href: "/join/support",
-      buttonText: "サポーター登録"
+      href: "https://line.me/ti/g2/So19My-fzEd_pTn84a1sFG9ZtI5cbNRY2HmwFQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default",
+      buttonText: "情報を受け取る"
     },
     {
       title: "一緒に創ってハレの日を彩る",
       description: "物語の制作、出店の出店、パフォーマンス、空間演出など。空神楽に集う自分たちの好奇心で、楽しさに満ちた非日常を作り出します。",
       icon: Pencil,
-      href: "/join/create",
+      href: "/enjoy/create",
       buttonText: "プロジェクトに参加"
     },
     {
       title: "ドローンを持ち寄ってさらなるスペクタクルを生む",
       description: "あなたの持つドローンを持ち寄り、一緒に空神楽の中に飛ばしましょう。みなで持ち寄り、よりスペクタクルな空神楽を作り上げ、大きな感動を誕生させます。",
       icon: Pencil,
-      href: "/join/create",
+      href: "/tool/hardware",
       buttonText: "詳細を見る"
     }
   ]
