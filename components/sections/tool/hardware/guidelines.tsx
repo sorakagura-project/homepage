@@ -20,18 +20,18 @@ export function HardwareGuidelines() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <Card className="overflow-hidden h-full">
-                <div className="aspect-video relative">
+                <div className="aspect-video relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800"
+                    src="/images/intermediate-technology.jpeg"
                     alt="人間と人間"
-                    className="object-cover w-full h-full"
+                    className="absolute inset-0 object-cover w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">人間と人間の境界</h3>
                   <p className="text-muted-foreground">
-                    SNSのように、人が”言葉””自分”に閉じこもり、言い争わないように。無視される声が現れるように。
+                    SNSのように、人が”言葉”や”自分”に閉じこもり、言い争わないように。無視される声が現れるように。
                   </p>
                 </div>
               </Card>
@@ -39,18 +39,18 @@ export function HardwareGuidelines() {
 
             <div>
               <Card className="overflow-hidden h-full">
-                <div className="aspect-video relative">
+                <div className="aspect-video relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
+                    src="/images/nature-technology.jpeg"
                     alt="人間とテクノロジーと自然"
-                    className="object-cover w-full h-full"
+                    className="absolute inset-0 object-cover w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">人間とテクノロジーと自然の境界</h3>
                   <p className="text-muted-foreground">
-                    敵対、支配するのではなく、共にいられる/楽しめるように。
+                    能力を高め敵対、支配するだけではなく、共に世界の中を生きて、喜びや苦しみを交わす複雑さを繋ぎ包み込むように。
                   </p>
                 </div>
               </Card>
@@ -58,18 +58,18 @@ export function HardwareGuidelines() {
 
             <div>
               <Card className="overflow-hidden h-full">
-                <div className="aspect-video relative">
+                <div className="aspect-video relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800"
+                    src="/images/traditional-drone.jpeg"
                     alt="技術と芸術と生活"
-                    className="object-cover w-full h-full"
+                    className="absolute inset-0 object-cover w-full h-full"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">技術と芸術と生活の境界</h3>
                   <p className="text-muted-foreground">
-                    用と美が循環するような、かつての民藝、技術の起源”テクネー”を目指して。
+                    用と美、ハレとケが循環するような、かつての民藝、技術の起源”テクネー”を目指して。
                   </p>
                 </div>
               </Card>
