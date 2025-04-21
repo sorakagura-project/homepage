@@ -73,11 +73,11 @@ export function TravelResidence() {
               transition={{ delay: index * 0.1 }}
             >
               <Card className="overflow-hidden h-full flex flex-col">
-                <div className="aspect-video relative">
+                <div className="relative aspect-video overflow-hidden">
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="object-cover w-full h-full"
+                    className="absolute inset-0 w-full h-full object-cover"
                   />
                   <program.icon className="absolute bottom-4 right-4 h-8 w-8 text-white drop-shadow-lg" />
                 </div>
