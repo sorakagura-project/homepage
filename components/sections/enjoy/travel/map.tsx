@@ -106,7 +106,7 @@ export function TravelMap() {
                     )}
                     {location.comingSoon && (
                       <Button asChild className="mt-auto">
-                        <Link href={`/collab`}>
+                        <Link href={`/collab#contact`}>
                           問い合わせはこちら
                           <ArrowRight className="ml-2 h-4 w-4" />
                         </Link>

@@ -10,7 +10,7 @@ export function TravelResidence() {
   const programs = [
     {
       title: "コワーキングスペース",
-      description: "リモートワーカーやデジタルノマドのための作業環境。自然豊かな環境で、快適な仕事空間と地域コミュニティとの交流を提供します。",
+      description: "リモートワーカーやデジタルノマドのための作業環境。自然豊かな環境で、快適な仕事空間と色々な人、作品との温かい交流を提供します。一緒に楽しむまかないも出るかも。",
       features: [
         "高速インターネット完備",
         "ワークショップ体験",
@@ -18,12 +18,12 @@ export function TravelResidence() {
         "コミュニティイベント"
       ],
       icon: Laptop,
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      image: "/images/coworking.jpeg",
       prepare: true
     },
     {
       title: "短期/長期滞在施設",
-      description: "プロジェクト参加者のための滞在施設。快適な生活環境と創造的な活動の場を提供し、地域との深い関わりを支援します。",
+      description: "拠点に滞在しながらプロジェクトに触れるプラン。地域で穏やかな時間を過ごしながら、自分の人生に新しい刺激とエネルギーを加える時間を提供します。",
       features: [
         "家具付き個室",
         "共用キッチン・ラウンジ",
@@ -31,12 +31,12 @@ export function TravelResidence() {
         "文化体験プログラム"
       ],
       icon: Home,
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=800",
+      image: "/images/stay.jpeg",
       prepare: true
     },
     {
-      title: "アートインレジデンス",
-      description: "アーティストやクリエイターのための滞在制作プログラム。地域の文化や環境に触れながら、新しい作品を生み出す機会を提供します。",
+      title: "アート/テックインレジデンス",
+      description: "アーティストやエンジニアのための滞在制作プログラム。地域の文化や環境に触れながら、空神楽プロジェクトの活動と交わり、新しい創作を生み出す機会を提供します。",
       features: [
         "最長3ヶ月の滞在制作",
         "制作スペース完備",
@@ -44,7 +44,7 @@ export function TravelResidence() {
         "作品発表の機会提供"
       ],
       icon: Palette,
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800",
+      image: "/images/artinresidence.jpeg",
       prepare: true
     }
   ]
