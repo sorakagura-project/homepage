@@ -51,7 +51,7 @@ export function GlobalChallenge() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="flex flex-col h-full overflow-hidden">
+              <Card className="flex flex-col h-full overflow-hidden p-0">
   　　　　　　　  <div className="aspect-video relative shrink-0">
                   <img
                     src={challenge.image}
