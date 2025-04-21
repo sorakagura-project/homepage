@@ -23,7 +23,7 @@ export function JoinHero() {
           <p className="text-xl text-muted-foreground mt-8 space-y-4">
             <span className="block">
               技術が好き、表現が好き、人と話すのが好き、
-              物語を作るのが好き、<br className="block sm:hidden" />文化が好き、未来が好き。
+              <br className="hidden sm:block" />物語を作るのが好き、<br className="block sm:hidden" />文化が好き、未来が好き。
             </span>
             <span className="block">
               あなたの「好き」を活かして、
