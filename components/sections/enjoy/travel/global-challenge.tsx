@@ -17,13 +17,13 @@ export function GlobalChallenge() {
     {
       title: "国際交流プログラム",
       description: "欧州のメディアアート機関やアジアのアートプロジェクトとの技術・文化交流を通じて、新しい表現の可能性や多様な価値のあり方を吸収します。",
-      icon: Users,
+      icon: Globe,
       image: "/images/arselectronica.webp"
     },
     {
       title: "海外レジデンス",
       description: "ベルリンやシリコンバレーなど、世界各地の制作拠点で探求/制作活動に取り組みます。現地のアーティストや技術者との共同制作を通じて視野を広げます。",
-      icon: Globe,
+      icon: Users,
       image: "/images/global-exchange.webp"
     }
   ]
@@ -51,12 +51,12 @@ export function GlobalChallenge() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="flex flex-col h-full overflow-hidden p-0">
-  　　　　　　　  <div className="aspect-video relative shrink-0">
+              <Card className="flex flex-col h-full overflow-hidden p-0 rounded-lg border-none">
+  　　　　　　　  <div className="relative w-full rounded-t-lg w-full pt-[56.25%]">
                   <img
                     src={challenge.image}
                     alt={challenge.title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
                   />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                   <challenge.icon className="absolute bottom-4 right-4 h-8 w-8 text-white drop-shadow-lg" />
