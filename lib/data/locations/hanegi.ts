@@ -1,6 +1,5 @@
 import type { LocationData } from '@/lib/types/location'
 
-
 export const hanegiLocation: LocationData = {
     name: '羽根木~下北沢-東京都世田谷区',
     heroImage: '/images/hanegi.jpg',
