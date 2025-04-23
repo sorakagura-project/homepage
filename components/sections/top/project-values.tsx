@@ -25,7 +25,7 @@ export function ProjectValues() {
                   &nbsp;&nbsp;&nbsp;ーあなたの中の美しさを動かす物
                 </>
               ),
-              description: "空虚でどうしようもない社会に押しつぶされ、なにも動けないあなたの日常に、空神楽のもたらす美と出会いが、驚きと愛と好奇心の息吹を吹き込み、あなたが動く原動力が生まれます。",
+              description: "空虚でどうしようもない社会に押しつぶされ、なにも動けない日常に、空神楽のもたらす美と出会いが、驚きと愛と好奇心の息吹を吹き込み、あなたが動く原動力が生まれます。",
               image: "https://images.unsplash.com/photo-1718303224196-a19f9b30cb17?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               icon: Users
             },
@@ -34,7 +34,7 @@ export function ProjectValues() {
                 <>
                   技術
                   <br />
-                  &nbsp;&nbsp;&nbsp;ーあなたを表すことを助け、<br className="block sm:hidden" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;存在させるもの
+                  &nbsp;&nbsp;&nbsp;ーあなたを表すことを助け、<br className="block sm:hidden" /><span className="inline-block sm:hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>存在させるもの
                 </>
               ),
               description: "あなたの中に眠る、複雑で美しくユニークな何かが、テクノロジー、美術、物語、科学など多様な技術の感得や創作を通じて、この世界に現れることを助けます。",
@@ -46,10 +46,10 @@ export function ProjectValues() {
                 <>
                   世界、未来との関係の再構築
                   <br />
-                  &nbsp;&nbsp;&nbsp;ーあなたの人生に<br className="block sm:hidden" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;意味をあたえるもの
+                  &nbsp;&nbsp;&nbsp;ーあなたの人生に<br className="block sm:hidden" /><span className="inline-block sm:hidden">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>意味をあたえるもの
                 </>
               ),
-              description: "あなたの参加を通じて、自分が世界の多様な存在とともに生きともに未来を生み出していることを感じることができます。空神楽を通じて多様な人、お金/スマホといった技術、自然との生き方を再構築します。",
+              description: "多様な人/考えと出会う中で、自分が世界の多様な存在とともに生きともに未来を生み出していることを感じることができます。空神楽を通じて多様な人、お金/スマホといった技術、自然との生き方を再構築します。",
               image: "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               icon: Sparkles
             }

@@ -8,20 +8,20 @@ import { Paintbrush, Wrench, Users, ArrowRight } from 'lucide-react'
 export function ParticipationLinks() {
   const links = [
     {
-      title: "実演支援",
-      description: "ドローンショーの運営をサポート",
+      title: "実演の手伝い",
+      description: "大迫力の実演のサポートをする",
       icon: Paintbrush,
       href: "/enjoy/watch#participation"
     },
     {
-      title: "技術開発",
-      description: "新しい表現技術の開発に参加",
+      title: "プロジェクト参加",
+      description: "多様な創作の波に加わる",
       icon: Wrench,
       href: "/enjoy/create"
     },
     {
       title: "運営サポート",
-      description: "プロジェクトの運営をサポート",
+      description: "プロジェクトの運営に加わる",
       icon: Users,
       href: "/join"
     }
@@ -42,7 +42,7 @@ export function ParticipationLinks() {
             </span>
           </h2>
           <p className="text-center text-muted-foreground mb-12">
-            あなたの才能と情熱を活かす場所がここに
+            あなたの好奇心と情熱を活かす場所がここに
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -69,15 +69,28 @@ export function ParticipationLinks() {
 
           <div className="mt-12 text-center">
             <p className="text-muted-foreground mb-6">
-              プロジェクトへの参加方法について、より詳しい情報が必要な方はこちら
+              プロジェクトへの多様な参加方法についてはこちら
             </p>
             <Button variant="ghost" asChild>
-              <Link href="/join">
-                参加について
+              <Link href="/join#apply">
+                参加のオプション
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-muted-foreground mb-6">
+              プロジェクトの運営メンバーについて
+            </p>
+            <Button variant="ghost" asChild>
+              <Link href="/member">
+                メンバーの紹介
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+          
         </motion.div>
       </div>
     </section>
