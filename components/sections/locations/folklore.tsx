@@ -47,7 +47,6 @@ export function LocationFolklore({ folklore }: LocationFolkloreProps) {
               </div>
             </div>
           ))}
-          </div>
         </motion.div>
       </div>
     </section>
