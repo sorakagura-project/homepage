@@ -25,7 +25,7 @@ const members: Member[] = [
   }
 ]
 
-const regions: Region[] = ['ALL', '南相馬', '横瀬', 'オンライン']
+const regions: Region[] = ['ALL', '小高', '横瀬', 'オンライン']
 
 export function MemberGrid() {
   const [selectedRegion, setSelectedRegion] = useState<Region>('ALL')
