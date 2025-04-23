@@ -1,4 +1,6 @@
-export const odakaLocation = {
+import type { LocationData } from '@/lib/types/location'
+
+export const odakaLocation: LocationData = {
   name: '小高-福島県南相馬市',
   heroImage: '/images/odakagawa.webp',
   overview: '福島県南相馬市小高区は、震災からの復興と新しい未来への挑戦の地。地域に関わる人それぞれが個性ある営みを持ち寄り他とは違う全くユニークな街へ進んでいる。馬の街として栄えた歴史を今なお野馬追祭りの継承により色濃く感じさせる。そして現代はロボット/宇宙産業の発達により、馬の街からロボットの街へ、文化の新たな創出に取り組んでいる。',
@@ -30,7 +32,8 @@ export const odakaLocation = {
       image: "/images/odaka-rocket.webp"
     }
   ],
-  folklore: {
+  folklore: [
+    {
     title: "地域に伝わる伝承文化",
     description: "かつて相馬藩であった土地に伝わる人と自然の物語",
     stories: [
@@ -45,7 +48,7 @@ export const odakaLocation = {
         image: "/images/odaka-nomaoi.webp"
       }
     ]
-  },
+  }],
   access: {
     address: '福島県南相馬市小高区',
     transportation: [

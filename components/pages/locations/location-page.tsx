@@ -27,7 +27,9 @@ export function LocationPage({ locationData }: LocationPageProps) {
         <LocationOverview overview={locationData.overview} />
         <LocationBase base={locationData.base} />
         <LocationExperiences experiences={locationData.experiences} />
-        <LocationFolklore folklore={locationData.folklore} />
+        {locationData.folklore && (
+  <LocationFolklore folklore={locationData.folklore} />
+)}
         <LocationAccess access={locationData.access} />
         <LocationProjects projects={locationData.relatedProjects} />
       </main>

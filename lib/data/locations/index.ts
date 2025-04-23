@@ -1,12 +1,14 @@
 import { odakaLocation } from './odaka'
 import { yokozeLocation } from './yokoze'
-import { Base, Experience, Story, Folklore, Access, Project } from '@/lib/types/location'
+import { hanegiLocation } from './hanegi'
+import { Base, Experience, Story, Folklore, Access, Project, LocationData } from '@/lib/types/location'
 
 export type  { Base, Experience, Story, Folklore, Access, Project }
 
-export const locationsData = {
+export const locationsData: Record<string, LocationData> = {
   'odaka': odakaLocation,
-  'yokoze': yokozeLocation
-} as const
+  'yokoze': yokozeLocation,
+  'hanegi': hanegiLocation
+}
 
 export type LocationId = keyof typeof locationsData
