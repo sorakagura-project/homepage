@@ -30,8 +30,8 @@ export const festivalProject = {
   ],
   subProjects: [
     {
-      title: '地域生態系の再生PJ',
-      description: '地域の生態系に人の営みを通じて関わり再生させる',
+      title: '地域に生きる生業の祭典PJ',
+      description: '食を中心として、地域の人の様々な営みを持ち寄り楽しむ',
       image: 'https://images.unsplash.com/photo-1506484381205-f7945653044d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
