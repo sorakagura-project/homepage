@@ -1,4 +1,7 @@
-export const hanegiLocation = {
+import type { LocationData } from '@/lib/types/location'
+
+
+export const hanegiLocation: LocationData = {
     name: '羽根木~下北沢-東京都世田谷区',
     heroImage: '/images/hanegi.jpg',
     overview: '世田谷区の羽根木〜下北沢エリアは、日本初の常設の冒険遊び場として作られた羽根木プレーパークから、線路跡地に作られた公園的市場BONUS TRACKを経て、実験し続ける街に変化する下北沢へと続く、自然と遊びが息づく東京の中の豊かな地域。遊び心を何よりの源泉とし空神楽の活動の集約点とします。',
