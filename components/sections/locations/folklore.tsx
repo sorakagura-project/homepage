@@ -16,7 +16,7 @@ interface Folklore {
 }
 
 interface LocationFolkloreProps {
-  folklore: Folklore
+  folklore: Folklore[]
 }
 
 export function LocationFolklore({ folklore }: LocationFolkloreProps) {
