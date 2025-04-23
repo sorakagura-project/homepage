@@ -32,7 +32,8 @@ export const odakaLocation: LocationData = {
       image: "/images/odaka-rocket.webp"
     }
   ],
-  folklore: {
+  folklore: [
+    {
     title: "地域に伝わる伝承文化",
     description: "かつて相馬藩であった土地に伝わる人と自然の物語",
     stories: [
@@ -47,7 +48,7 @@ export const odakaLocation: LocationData = {
         image: "/images/odaka-nomaoi.webp"
       }
     ]
-  },
+  }],
   access: {
     address: '福島県南相馬市小高区',
     transportation: [

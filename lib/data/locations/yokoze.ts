@@ -22,7 +22,7 @@ export const yokozeLocation: LocationData = {
       image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800"
     }
   ],
-  folklore: {
+  folklore: [{
     title: "地域に伝わる伝承文化",
     description: "武甲山はじめ山々に囲まれた地域で育まれた人と自然の間の暮らしを伝える行事",
     stories: [
@@ -37,7 +37,7 @@ export const yokozeLocation: LocationData = {
         image: "/images/ryuseimaturi.jpg"
       }
     ]
-  },
+  }],
   access: {
     address: '埼玉県秩父郡横瀬町',
     transportation: [
