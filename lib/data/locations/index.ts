@@ -12,4 +12,3 @@ export const locationsData: Record<string, LocationData> = {
 }
 
 export type LocationId = keyof typeof locationsData
-export type LocationData = LocationData
