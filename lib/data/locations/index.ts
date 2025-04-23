@@ -5,7 +5,7 @@ import { Base, Experience, Story, Folklore, Access, Project, LocationData } from
 
 export type  { Base, Experience, Story, Folklore, Access, Project }
 
-export const locationsData = {
+export const locationsData: Record<string, LocationData> = {
   'odaka': odakaLocation,
   'yokoze': yokozeLocation,
   'hanegi': hanegiLocation
