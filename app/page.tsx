@@ -10,7 +10,7 @@ import { ProjectValues } from '@/components/sections/top/project-values'
 import { EnjoymentWays } from '@/components/sections/top/enjoyment-ways'
 import { FollowUs } from '@/components/sections/top/follow-us'
 import { ProjectNews } from '@/components/sections/top/project-news'
-import { PartnerOrganization} from '@/components/sections/top/partner-organizations'
+import { PartnerOrganizations} from '@/components/sections/top/partner-organizations'
 
 export default function Home() {
   return (
@@ -26,6 +26,7 @@ export default function Home() {
         <ProjectValues />
         <FollowUs />
         <ProjectNews />
+        <PartnerOrganizations />
       </main>
 
       <SiteFooter />
