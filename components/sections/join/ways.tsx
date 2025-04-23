@@ -8,6 +8,28 @@ import { JoinForm } from './form'
 export function JoinWays() {
   const ways = [
     {
+      title: "実演イベントを訪れる",
+      description: "時折開催される実演イベントに参加して、プロジェクトの雰囲気を体験できます。会場にいる担当者と話しながら、関わり方など相談ができます。",
+      icon: Calendar,
+      action: {
+        text: "イベントを見る",
+        href: "/enjoy/watch",
+        external: false
+      },
+      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800"
+    },
+    {
+      title: "拠点を訪れる",
+      description: "各地の拠点では、メンバーが日々活動しています。見学や体験も歓迎です。学びや創作に関わりながら自分の興味、関わりを相談できます。",
+      icon: Building2,
+      action: {
+        text: "拠点を探す",
+        href: "/enjoy/travel",
+        external: false
+      },
+      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
+    },
+    {
       title: "SNSよりDM",
       description: "気軽に参加できるコミュニティです。プロジェクトの最新情報や、メンバー同士の交流を楽しめます。InstagramやDiscordより気軽にご連絡ください。",
       icon: Users,
@@ -28,34 +50,13 @@ export function JoinWays() {
         external: true
       },
       image: "https://images.unsplash.com/photo-1586980368323-8ce5db4c85ce?q=80&w=2929&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      title: "実演イベントを訪れる",
-      description: "時折開催される実演イベントに参加して、プロジェクトの雰囲気を体験できます。会場にいる担当者と話しながら、関わり方など相談ができます。",
-      icon: Calendar,
-      action: {
-        text: "イベントを見る",
-        href: "/enjoy/watch",
-        external: false
-      },
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=800"
-    },
-    {
-      title: "拠点に訪れる",
-      description: "各地の拠点では、メンバーが日々活動しています。見学や体験も歓迎です。学びや創作に関わりながら自分の興味、関わりを相談できます。",
-      icon: Building2,
-      action: {
-        text: "拠点を探す",
-        href: "/enjoy/travel",
-        external: false
-      },
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
     }
+    
   ]
 
   return (
     <>
-      <section className="py-20 bg-background">
+      <section id="apply" className="py-20 bg-background">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -27,7 +27,7 @@ export function ProjectOverview() {
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-8">空神楽プロジェクトとは</h2>
           <p className="text-lg leading-relaxed mb-6">
-            空神楽とは、人とドローンが集い、<br className="block sm:hidden" />夜空に光の物語を描く、<br />美しさと楽しさに満ちた<br className="block sm:hidden" />人機共創の演舞です。
+            空神楽（そらかぐら）とは、人とドローンが集い、<br className="block sm:hidden" />夜空に光の物語を描く、<br />美しさと楽しさに満ちた<br className="block sm:hidden" />人機共創の演舞です。
           </p>
           <p className="text-lg leading-relaxed mb-6">
             このプロジェクトは、<br className="block sm:hidden" />年齢、能力、肩書き、一切関係なく、<br />空神楽の鑑賞/実演/制作を一緒に<br className="block sm:hidden" />楽しむ、全ての人の好奇心に<br className="block sm:hidden" />開かれた<br className="hidden md:block" />非営利かつオープンな<br className="block sm:hidden" />プロジェクトです。

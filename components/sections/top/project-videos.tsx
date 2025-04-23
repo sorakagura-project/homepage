@@ -8,17 +8,17 @@ export function ProjectVideos() {
     {
       title: "空神楽の世界",
       description: "Coming",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800"
+      image: "/images/kuyoumon_droneart.png"
     },
     {
       title: "実演の舞台裏",
       description: "Coming",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800"
+      image: "/images/sorakagura_background.JPG"
     },
     {
       title: "学びと創造の現場",
       description: "Coming",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
+      image: "/images/art_create.JPG"
     }
   ]
 

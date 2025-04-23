@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container py-10">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
-          <div>
+          <div className="text-left">
             <h3 className="text-lg font-semibold mb-4">空神楽プロジェクト</h3>
             <p className="text-sm text-muted-foreground">
               光るドローンの群れと紡ぐ、<br/>わたしたちの未来創造プロジェクト
@@ -103,7 +103,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-8 border-t pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} 空神楽プロジェクト. All rights reserved.
+            © {new Date().getFullYear()} 空神楽DAO. All rights reserved.
           </p>
         </div>
       </div>
