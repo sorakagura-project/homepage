@@ -35,3 +35,14 @@ export interface Project {
   description: string
   image: string
 }
+
+export interface LocationData {
+  name: string
+  heroImage: string
+  overview: string
+  base: Base
+  experiences: Experience[]
+  folklore?: Folklore[]  
+  access: Access
+  relatedProjects: Project[]
+}

@@ -27,7 +27,9 @@ export function LocationPage({ locationData }: LocationPageProps) {
         <LocationOverview overview={locationData.overview} />
         <LocationBase base={locationData.base} />
         <LocationExperiences experiences={locationData.experiences} />
-        {locationData.name !== '羽根木~下北沢-東京都世田谷区' && <LocationFolklore folklore={locationData.folklore} />}
+        {locationData.folklore && (
+  <LocationFolklore folklore={locationData.folklore} />
+)}
         <LocationAccess access={locationData.access} />
         <LocationProjects projects={locationData.relatedProjects} />
       </main>
