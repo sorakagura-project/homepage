@@ -22,7 +22,7 @@ export function TravelMap() {
     },
     {
       id: "yokoze",
-      name: "横瀬町-秩父郡",
+      name: "横瀬-秩父郡",
       description: "埼玉県秩父郡横瀬町は、豊かな自然、あたたかい人のつながりと多様な挑戦が淀みなく巡る調和した町。都会からほど近い里山で、山、川、人に癒されながら、穏やかで新しい学びと創作にあふれた時間を過ごせます。",
       features: [
         "日本一チャレンジする町",
@@ -31,6 +31,18 @@ export function TravelMap() {
         "秩父夜祭り"
       ],
       image: "/images/yokoze-kagaribi.webp"
+    },
+    {
+      id: "hanegi",
+      name: "羽根木~下北沢-東京",
+      description: "日本初の常設の冒険遊び場として作られた羽根木プレーパークから、線路跡地に作られた公園的市場BONUS TRACKを経て、実験し続ける街に変化する下北沢へと続くエリア。遊び心を何よりの源泉とし空神楽の活動の集約点とします。",
+      features: [
+        "冒険遊び場",
+        "羽根木公園",
+        "BONUS TRACK",
+        "空神楽研究集約点"
+      ],
+      image: "/images/hanegi.jpg"
     },
     {
       name: "展開予定",

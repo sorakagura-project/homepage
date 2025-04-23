@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 import clsx from 'clsx'
 
-type Region = 'ALL' | '小高' | '横瀬' | 'オンライン'
+type Region = 'ALL' | '小高' | '横瀬' | '東京' | 'オンライン'
 
 interface Member {
   name: string
@@ -25,7 +25,7 @@ const members: Member[] = [
   }
 ]
 
-const regions: Region[] = ['ALL', '小高', '横瀬', 'オンライン']
+const regions: Region[] = ['ALL', '小高', '横瀬', '東京', 'オンライン']
 
 export function MemberGrid() {
   const [selectedRegion, setSelectedRegion] = useState<Region>('ALL')
