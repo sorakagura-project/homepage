@@ -42,8 +42,8 @@ export const inclusiveProject = {
       image: 'https://images.unsplash.com/photo-1605207186647-5ad9a3268ca1?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
     {
-      title: 'トポフォニックインスタレーションPJ',
-      description: '空神楽が行われる空間が人だけでなくたくさんの生命であふれた場であることを、空間設計やメディアの設計で表現します',
+      title: 'フレンドリーパフォーマンスPJ',
+      description: '音楽や踊りなどを多くの人が参加しやすい形に設計します',
       image: '/images/topophonicinstallation.jpeg'
     }
   ],
