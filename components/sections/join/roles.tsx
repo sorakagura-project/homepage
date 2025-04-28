@@ -8,34 +8,34 @@ export function JoinRoles() {
   const roles = [
     {
       title: "アニメーター（魂を吹き込む人）/アーティスト",
-      description: "空神楽プロジェクトの中核のイメージを具現化する人として、各地でディスプレイする作品の制作に携わります。人間/テクノロジー/自然、伝統/未来が交差する中で共に生きる光の集団の物語を描きます",
+      description: "光の群れの表現を通じて生命の美しいあり方を表現し、人間/テクノロジー/自然、伝統/未来のほつれを紐解きます",
       icon: Palette,
       skills: ["物語", "アニメーション", "群れの表現", "3Dモデリング"],
-      location: "リモート",
-      frequency: "週1日程度（応相談）"
+      location: "リモート可",
+      frequency: "作品制作ごとに稼働"
     },
     {
       title: "プロジェクトマネージャー",
       description: "必要な人員、資金、時間を見極め、プロジェクトを推し進める役割を担います",
       icon: Users,
       skills: ["マネージメント", "ファイナンス", "戦略立案"],
-      location: "リモート",
+      location: "リモート可",
       frequency: "週1日程度（応相談）"
     },
     {
       title: "ドローンエンジニア",
-      description: "ドローンの開発プロジェクトと実演時の機体運用にコミットします",
+      description: "ドローンの開発プロジェクトや実演時の機体運用など、技術面をリードします",
       icon: Code,
       skills: ["ドローン開発", "制御工学"],
-      location: "リモート、実演時に移動（応相談）",
-      frequency: "週3-4日程度（応相談）"
+      location: "リモート可（応相談）",
+      frequency: "週1-2日程度（応相談）"
     },
     {
       title: "映像作家",
       description: "プロジェクトの映像の制作を通じて人々の喜びと感動を連鎖させ、みなが参加したくなるプロジェクトへブランディングします",
       icon: Camera,
       skills: ["撮影", "編集", "ストーリーテリング"],
-      location: "南相馬市、横瀬町、リモート",
+      location: "リモート可",
       frequency: "月1-2日程度（応相談）"
     },
     {
@@ -43,7 +43,7 @@ export function JoinRoles() {
       description: "表現する技術の伝達を通じて、人が物を現す手助けをします",
       icon: PenTool,
       skills: ["美術教育", "ドローイング", "アニメーション"],
-      location: "南相馬市",
+      location: "南相馬市（応相談）",
       frequency: "週1-2日程度（応相談）"
     },
     {
