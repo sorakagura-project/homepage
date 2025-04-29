@@ -146,7 +146,7 @@ export function HeroSection() {
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-gold via-deepRed to-indigo">
-            光を失った空へ、
+            光を失った空へ
           </span>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-gold via-deepRed to-indigo mt-2">
             わたしたちで<br className="block sm:hidden" />舞おう
