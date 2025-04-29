@@ -44,7 +44,12 @@ export const inclusiveProject = {
     {
       title: 'フレンドリーパフォーマンスPJ',
       description: '音楽や踊りなどを多くの人が参加しやすい形に設計します',
-      image: '/images/topophonicinstallation.jpeg'
+      image: '/images/simulated_dance.jpg'
+    },
+    {
+      title: 'ブリコラージュPJ',
+      description: '地域の生活に眠る、物、技、知を持ち寄り、集合的芸術を作り上げます。',
+      image: '/images/bricolage.jpg'
     }
   ],
   discordUrl: 'https://discord.gg/Q9yg7Pszxs',
