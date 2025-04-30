@@ -30,7 +30,7 @@ export const daoProject = {
   ],
   subProjects: [
     {
-      title: 'pluralityプロジェクト',
+      title: 'Alogrithm for Plurality PJ',
       description: 'アルゴリズムが媒介する社会における複数性の考慮した集合体の価値決定プロセスを、芸術の集合的創造を介しながら、望ましいアルゴリズムと人間/生物に問われる条件を模索します。',
       image: 'https://images.unsplash.com/photo-1570393080660-de4e4a15a247?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     },
