@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { MessageSquare, Users, Lightbulb, ArrowRight } from 'lucide-react'
+import { LINKS } from '@/lib/links'
 
 export function LearnCommunity() {
   const features = [
@@ -70,7 +71,7 @@ export function LearnCommunity() {
             </p>
             <Button variant="secondary" size="lg" asChild>
               <a
-                href="https://discord.gg/Q9yg7Pszxs"
+                href="LINKS.discord"
                 target="_blank"
                 rel="noopener noreferrer"
               >

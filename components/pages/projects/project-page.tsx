@@ -13,6 +13,7 @@ import { ProjectCommunity } from '@/components/sections/projects/community'
 import { ProjectEvents } from '@/components/sections/projects/events'
 import { projectsData, ProjectData } from '@/lib/data/projects'
 import { notFound } from 'next/navigation'
+import { LINKS } from '@/lib/links'
 
 interface ProjectPageProps {
   params: {
@@ -39,7 +40,7 @@ export function ProjectPage({ params }: ProjectPageProps) {
         <ProjectAchievements achievements={projectData.achievements} />
         <ProjectGallery projects={projectData.subProjects} />
         <ProjectTargetAudience targets={projectData.targetAudience} />
-        <ProjectCommunity discordUrl={projectData.discordUrl} />
+        <ProjectCommunity discordUrl={LINKS.discord} />
         <ProjectEvents events={projectData.upcomingEvents} />
       </main>
 

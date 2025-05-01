@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from '@/lib/utils'
 import React from 'react'
+import { LINKS } from '@/lib/links'
 
 const enjoyLinks = [
   {
@@ -131,7 +132,7 @@ export function SiteHeader() {
           </nav>
           <div className="flex items-center space-x-3 border-l pl-6">
             <a
-              href="https://instagram.com/sorakagura_project"
+              href="LINKS.instagram"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -139,7 +140,7 @@ export function SiteHeader() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="https://www.youtube.com/channel/UCjLozgVf2zJ3iyyaRVUnA8Q"
+              href="LINKS.youtube"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
