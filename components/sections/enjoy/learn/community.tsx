@@ -71,7 +71,7 @@ export function LearnCommunity() {
             </p>
             <Button variant="secondary" size="lg" asChild>
               <a
-                href="LINKS.discord"
+                href={LINKS.discord}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -49,7 +49,7 @@ export const droneAnimateProject = {
       image: '/images/traditional-drone.jpeg'
     }
   ],
-  discordUrl: 'LINKS.discord',
+  discordUrl: LINKS.discord,
   upcomingEvents: [
     {
       title: 'プロジェクト全体キックオフmtg',

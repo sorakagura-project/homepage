@@ -14,13 +14,13 @@ export function FollowUs() {
       links: [
         {
           name: "Instagram",
-          url: "LINKS.instagram",
+          url: LINKS.instagram,
           icon: Instagram,
           style: "bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white hover:opacity-90"
         },
         {
           name: "Youtube",
-          url: "LINKS.youtube",
+          url: LINKS.youtube,
           icon: Youtube,
           style: "bg-[#FF0000] text-white hover:bg-[#FF0000]/90"
         }
@@ -32,7 +32,7 @@ export function FollowUs() {
       links: [
         {
           name: "LINE Openchat",
-          url: "LINKS.lineopenchat",
+          url: LINKS.lineopenchat,
           icon: MessageSquare,
           style: "bg-[#00B900] text-white hover:bg-[#00B900]/90"
         }
@@ -44,7 +44,7 @@ export function FollowUs() {
       links: [
         {
           name: "Discord",
-          url: "LINKS.discord",
+          url: LINKS.discord,
           icon: MessageCircle,
           style: "bg-[#5865F2] text-white hover:bg-[#5865F2]/90"
         }
