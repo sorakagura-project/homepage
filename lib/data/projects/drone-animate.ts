@@ -1,3 +1,5 @@
+import { LINKS } from '@/lib/links'
+
 export const droneAnimateProject = {
   title: 'ドローンに魂を吹き込むプロジェクト',
   heroImage: '/images/animated-drone.jpg',
@@ -47,7 +49,7 @@ export const droneAnimateProject = {
       image: '/images/traditional-drone.jpeg'
     }
   ],
-  discordUrl: 'https://discord.gg/Q9yg7Pszxs',
+  discordUrl: 'LINKS.discord',
   upcomingEvents: [
     {
       title: 'プロジェクト全体キックオフmtg',

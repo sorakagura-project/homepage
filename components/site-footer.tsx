@@ -1,5 +1,6 @@
 import { Instagram, Youtube } from 'lucide-react'
 import Link from 'next/link'
+import { LINKS } from '@/lib/links'
 
 export function SiteFooter() {
   return (
@@ -76,7 +77,7 @@ export function SiteFooter() {
             <h3 className="text-lg font-semibold mb-4">SNS</h3>
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://instagram.com/sorakagura_project"
+                href="LINKS.instagram"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"
@@ -84,7 +85,7 @@ export function SiteFooter() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://www.youtube.com/channel/UCjLozgVf2zJ3iyyaRVUnA8Q"
+                href="LINKS.youtube"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"

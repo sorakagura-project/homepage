@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Instagram, Youtube, MessageSquare, MessageCircle, ArrowRight } from 'lucide-react'
+import { LINKS } from '@/lib/links'
 
 export function FollowUs() {
   const steps = [
@@ -13,13 +14,13 @@ export function FollowUs() {
       links: [
         {
           name: "Instagram",
-          url: "https://instagram.com/sorakagura_project",
+          url: "LINKS.instagram",
           icon: Instagram,
           style: "bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white hover:opacity-90"
         },
         {
           name: "Youtube",
-          url: "https://www.youtube.com/channel/UCjLozgVf2zJ3iyyaRVUnA8Q",
+          url: "LINKS.youtube",
           icon: Youtube,
           style: "bg-[#FF0000] text-white hover:bg-[#FF0000]/90"
         }
@@ -31,7 +32,7 @@ export function FollowUs() {
       links: [
         {
           name: "LINE Openchat",
-          url: "https://line.me/ti/g2/XXXXXXXX",
+          url: "LINKS.lineopenchat",
           icon: MessageSquare,
           style: "bg-[#00B900] text-white hover:bg-[#00B900]/90"
         }
@@ -43,7 +44,7 @@ export function FollowUs() {
       links: [
         {
           name: "Discord",
-          url: "https://discord.gg/your-invite-link",
+          url: "LINKS.discord",
           icon: MessageCircle,
           style: "bg-[#5865F2] text-white hover:bg-[#5865F2]/90"
         }

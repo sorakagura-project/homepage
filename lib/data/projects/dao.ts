@@ -1,3 +1,5 @@
+import { LINKS } from '@/lib/links'
+
 export const daoProject = {
   title: '空神楽DAO化',
   heroImage: 'https://images.unsplash.com/photo-1644088379091-d574269d422f?q=80&w=3193&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -45,7 +47,7 @@ export const daoProject = {
       image: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800'
     }
   ],
-  discordUrl: 'https://discord.gg/Q9yg7Pszxs',
+  discordUrl: 'LINKS.discord',
   upcomingEvents: [
     {
       title: 'プロジェクト全体キックオフmtg',
