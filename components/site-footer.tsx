@@ -77,7 +77,7 @@ export function SiteFooter() {
             <h3 className="text-lg font-semibold mb-4">SNS</h3>
             <div className="flex space-x-4 mb-4">
               <a
-                href="LINKS.instagram"
+                href= {LINKS.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"
@@ -85,7 +85,7 @@ export function SiteFooter() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="LINKS.youtube"
+                href= {LINKS.youtube}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary"

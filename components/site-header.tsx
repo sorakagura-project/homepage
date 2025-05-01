@@ -132,7 +132,7 @@ export function SiteHeader() {
           </nav>
           <div className="flex items-center space-x-3 border-l pl-6">
             <a
-              href="LINKS.instagram"
+              href= {LINKS.instagram}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -140,7 +140,7 @@ export function SiteHeader() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="LINKS.youtube"
+              href= {LINKS.youtube}
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
