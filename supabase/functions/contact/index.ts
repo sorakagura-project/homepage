@@ -1,8 +1,8 @@
-import { serve } from "npm:@std/http-server@0.168.0"
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "npm:@supabase/supabase-js@2.39.7"
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Origin': Deno.env.get('NODE_ENV') === 'production' ? 'https://sorakagura.com' : '*',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
@@ -54,7 +54,7 @@ serve(async (req) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'noreply@onresend.com', // Resendで認証したドメインのアドレス
+        from: 'noreply@sorakagura.com', // Your verified domain
         to: 'sorakagura.project@gmail.com', // 受け取りたいアドレス
         subject: `新しい問い合わせ: ${formData.formType}`,
         html: `
