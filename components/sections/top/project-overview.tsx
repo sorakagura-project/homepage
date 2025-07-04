@@ -26,6 +26,7 @@ export function ProjectOverview() {
           {...fadeIn}
         >
           <h2 className="text-2xl md:text-3xl font-bold mb-8">空神楽プロジェクトとは</h2>
+          {/*
           <p className="text-lg leading-relaxed mb-6">
             空神楽（そらかぐら）とは、人とドローンが集い、<br className="block sm:hidden" />夜空に光の物語を描く、<br />美しさと楽しさに満ちた<br className="block sm:hidden" />人機共創の演舞です。
           </p>
@@ -36,6 +37,18 @@ export function ProjectOverview() {
             AI、経済、地球環境の<br className="block sm:hidden" />めまぐるしい変化の中で、<br />仕事/お金の不安、暇、無力さと虚無感<br className="block sm:hidden" />に襲われる中でも、
             <br />今を生きるわたしたちの、<br className="block sm:hidden" />生・創造の美が集い重なり合い、<br />
             人・テクノロジー・自然の美しい未来を創造する場となることを目指します。
+          </p>
+          */}
+          <p className="text-lg leading-relaxed mb-6">
+            空神楽（そらかぐら）とは、未来の花火。
+          </p>
+          <p className="text-lg leading-relaxed mb-6">
+            ここは、未来の花火を皆で創り出す、<br />自由と美と楽しさに満ちた、広大な原っぱである。
+          </p>
+          <p className="text-lg leading-relaxed mb-6">
+            私たちと空をつなぎ、<br className="block sm:hidden" />光と命を自由に紡ぐテクノロジーで
+            <br />誰か一人ではなく、<br className="block sm:hidden" />わたしたち皆のための、<br />
+            すべての生きとし生けるもの<br className="block sm:hidden" />をつなぐ遊びである。
           </p>
         </motion.div>
       </div>
