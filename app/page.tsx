@@ -11,6 +11,7 @@ import { EnjoymentWays } from '@/components/sections/top/enjoyment-ways'
 import { FollowUs } from '@/components/sections/top/follow-us'
 import { ProjectNews } from '@/components/sections/top/project-news'
 import { PartnerOrganizations} from '@/components/sections/top/partner-organizations'
+import { Linktonoa } from '@/components/sections/top/linktonoa'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <FollowUs />
         <ProjectNews />
         <PartnerOrganizations />
+        <Linktonoa/>
       </main>
 
       <SiteFooter />
