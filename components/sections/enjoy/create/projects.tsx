@@ -140,9 +140,9 @@ export function CreateProjects() {
                     <span className="text-sm px-2 py-1 rounded-full bg-primary/10 text-primary">
                       {project.status}
                     </span>
-                    <span className="text-sm text-muted-foreground">
+                    {/* <span className="text-sm text-muted-foreground">
                       {project.members}
-                    </span>
+                    </span> */}
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                   <p className="text-muted-foreground mb-4">{project.description}</p>
